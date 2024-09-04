@@ -22,36 +22,36 @@ public abstract class Personaje {
     public String getNombre() {
         return nombre;
     }
-    public void setNombre(String nombre) {
+    void setNombre(String nombre) {
         this.nombre = nombre;
     }
     public int getSalud() {
         return salud;
     }
-    public void setSalud(int salud) {
+    void setSalud(int salud) {
         this.salud = salud;
     }
     public int getArmadura() {
         return armadura;
     }
-    public void setArmadura(int armadura) {
+    void setArmadura(int armadura) {
         this.armadura = armadura;
     }
     public int getAtaque() {
         return ataque;
     }
-    public void setAtaque(int ataque) {
+    void setAtaque(int ataque) {
         this.ataque = ataque;
     }
 
     public int getEnergia() {
         return energia;
     }
-    public void aumentarEnergia(int cantidad) {
+    void aumentarEnergia(int cantidad) {
         this.energia = Math.min(energiaMax, this.energia + cantidad); // Aumenta sin sobrepasar el máximo
     }
 
-    public void reducirEnergia(int cantidad) {
+    void reducirEnergia(int cantidad) {
         this.energia = Math.max(0, this.energia - cantidad); // Reduce sin ir por debajo de 0
     }
 
